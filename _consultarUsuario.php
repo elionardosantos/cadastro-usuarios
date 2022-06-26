@@ -10,18 +10,19 @@
         include "./layout/header.php";
         include "./layout/navbar.php";
     ?>
-    <h2 class="container">Usuários Cadastrados</h2>
     <div class="container">
+        <h2>Usuários Cadastrados</h2>
         <?php
-            $sql = "SELECT * FROM `users` WHERE 1";
+            $nome = $_GET['name'];
+
+            $sql = "SELECT * FROM `users` WHERE `name` LIKE '%$nome%'";
             $busca = mysqli_query($conexao,$sql);
         ?>
         <table>
         <tr>
             <th>Nome</th>
             <th>Email</th>
-            <th></th>
-            <th></th>
+            <th>Editar</th>
         </tr>
 
         <?php
@@ -31,11 +32,13 @@
                 $email = $resultado['email'];
                 $userID = $resultado['userID'];
                 ?>
+                
                 <tr>
                     <td><?=$name?></td>
                     <td><?=$email?></td>
-                    <td><a href="./_editarUsuario.php?id=<?=$userID?>"><img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/32/000000/external-edit-interface-kiranshastry-lineal-kiranshastry.png"/></a></td>
+                    <td><a href="./editarUsuario.php?userID=<?=$userID?>">editar</a></td>
                 </tr>
+                
             <?php }
         ?>
         </table>

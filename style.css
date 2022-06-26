@@ -1,3 +1,7 @@
+body {
+    padding: 5px;
+}
+
 .container {
     width: 100%;
     max-width: 900px;
@@ -12,25 +16,30 @@
 #navbar {
     background-color: blue;
 }
+#navbar li {
+    display: inline;
+}
+#navbar ul {
+    display: flex;
+    justify-content: space-around;
+}
 #navbar a {
     color: white;
     text-decoration: none;
 }
 
-#navbar navbar {
-    display: flex;
-    justify-content: space-around;
-}
-
 table {
     width: 100%;
+    white-space: nowrap;
 }
 
 table, th, td {
-    border-bottom: solid 1px;
+    border: solid 1px;
     border-collapse: collapse;
 }
 
 tr {
     text-align: center;
+    min-width: 50px;
 }
+

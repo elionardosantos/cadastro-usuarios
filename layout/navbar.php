@@ -1,7 +1,7 @@
 <div id="navbar" class="container">
-    <navbar>
-        <a href="./index.php">Início</a>
-        <a href="./cadastrarUsuario.php">Cadastrar</a>
-        <a href="./consultarUsuario.php">Consultar</a>
-    </navbar>
+    <ul>
+        <li><a href="./index.php">Início</a></li>
+        <li><a href="./consultarUsuario.php">Consultar</a></li>
+        <li><a href="./cadastrarUsuario.php">Cadastrar</a></li>
+    </ul>
 </div>

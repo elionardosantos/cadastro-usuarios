@@ -1,3 +1,3 @@
 <div id="header" class="container">
-    <h1>SHOSTENES & SHOSTENES</h1>
+    <h1>Cadastro de Usuários</h1>
 </div>

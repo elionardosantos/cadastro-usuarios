@@ -6,17 +6,17 @@
 </head>
 <body>
     <?php
-        include "./connection.php";
         include "./layout/header.php";
         include "./layout/navbar.php";
     ?>
-    <?php
-        $name = strtolower($_POST['name']);
-        $email = strtolower($_POST['email']);
-    ?>
+    <h2 class="container">Cadastrar Usuário</h2>
     <div class="container">
         <p>
             <?php
+                include "./connection.php";
+                
+                $name = strtolower($_POST['name']);
+                $email = strtolower($_POST['email']);
                 
                 if (!empty($name) && !empty($email)) {
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php include "./layout/head.php"; ?>
-    <title>Consultar Usuario</title>
+    <title>Editar Usuario</title>
 </head>
 <body>
     <?php
@@ -10,8 +10,18 @@
         include "./layout/navbar.php";
     ?>
     <h2 class="container">Editar Usuário</h2>
-    <div class="container" id="form">
-        
+    <div class="container">
+        <?php
+            include "./connection.php";
+
+            $userID = $_POST['userID'];
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+
+            $sql = "UPDATE `users` SET `userID`='$userID',`name`='$name',`email`='$email' WHERE `userID` = $userID";
+            $atualizar = mysqli_query($conexao,$sql);
+        ?>
+        <h3><?="Usuário atualizado";?></h3>
     </div>
 </body>
 </html>
