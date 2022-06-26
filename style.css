@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -20,4 +20,17 @@
 #navbar navbar {
     display: flex;
     justify-content: space-around;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border-bottom: solid 1px;
+    border-collapse: collapse;
+}
+
+tr {
+    text-align: center;
 }

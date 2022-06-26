@@ -13,13 +13,8 @@
     <h2 class="container">Consultar Usuário</h2>
     <div class="container" id="form">
         <form action="./_consultarUsuario.php" method="get">
-            <label for="firstName">Nome:</label><br>
-            <input type="text" name="firstName" id="firstName"><br><br>
-            <label for="lastName">Sobrenome:</label><br>
-            <input type="text" name="lastName" id="lastName"><br><br>
-            <label for="email">Email:</label><br>
-            <!-- Corrigir input type para "email" -->
-            <input type="text" name="email" id="email"><br><br>
+            <label for="name">Nome:</label><br>
+            <input type="text" name="name" id="name"><br><br>
             <button type="submit">Consultar</button>
         </form>
     </div>

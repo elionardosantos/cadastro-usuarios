@@ -12,10 +12,8 @@
     <h2 class="container">Cadastrar Usuário</h2>
     <div class="container" id="form">
         <form action="./_cadastrarUsuario.php" method="post">
-            <label for="firstName">Nome:*</label><br>
-            <input type="text" name="firstName" id="firstName" required autofocus><br><br>
-            <label for="lastName">Sobrenome:*</label><br>
-            <input type="text" name="lastName" id="lastName" required><br><br>
+            <label for="name">Nome:*</label><br>
+            <input type="text" name="name" id="name" required autofocus><br><br>
             <label for="email">Email:</label><br>
             <!-- Corrigir input type para "email" -->
             <input type="text" name="email" id="email"><br><br>

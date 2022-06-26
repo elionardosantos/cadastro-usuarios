@@ -2,9 +2,5 @@ CREATE TABLE users (
 	userID int PRIMARY KEY AUTO_INCREMENT,
     firstName varchar(64),
     lastName varchar(64),
-    email varchar(64),
-    login varchar(64),
-    senha varchar(64),
-    userStatus int
+    email varchar(64)
 )
-
