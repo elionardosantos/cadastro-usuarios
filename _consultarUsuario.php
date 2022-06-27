@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <?php include "./layout/head.php"; ?>
     <title>Consultar Usuario</title>
@@ -22,7 +22,7 @@
             <tr>
                 <th>Nome</th>
                 <th>Email</th>
-                <th>Editar</th>
+                <th>Ação</th>
             </tr>
 
             <?php while ($resultado = mysqli_fetch_array($busca)) {?>
