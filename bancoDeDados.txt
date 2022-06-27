@@ -1,6 +1,5 @@
 CREATE TABLE users (
 	userID int PRIMARY KEY AUTO_INCREMENT,
-    firstName varchar(64),
-    lastName varchar(64),
+    name varchar(64),
     email varchar(64)
 )

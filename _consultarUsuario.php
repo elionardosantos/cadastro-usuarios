@@ -19,16 +19,15 @@
             $busca = mysqli_query($conexao,$sql);
         ?>
         <table>
-        <tr>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Editar</th>
-        </tr>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Editar</th>
+            </tr>
 
-        <?php
-            while ($resultado = mysqli_fetch_array($busca)) {?>
+            <?php while ($resultado = mysqli_fetch_array($busca)) {?>
                 <?php
-                $name = $resultado['name'];
+                $name = ucwords($resultado['name']);
                 $email = $resultado['email'];
                 $userID = $resultado['userID'];
                 ?>
@@ -39,8 +38,7 @@
                     <td><a href="./editarUsuario.php?userID=<?=$userID?>">editar</a></td>
                 </tr>
                 
-            <?php }
-        ?>
+            <?php } ?>
         </table>
 
     </div>

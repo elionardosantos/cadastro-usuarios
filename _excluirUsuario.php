@@ -18,13 +18,15 @@
         $userID = $_GET['userID'];
 
         $sql = "DELETE FROM `users` WHERE `userID` = $userID";
-        $busca = mysqli_query($conexao,$sql);
-        $resultado = mysqli_fetch_array($busca);
+        $delete = mysqli_query($conexao,$sql);
 
-        $name = $resultado['name'];
-        $email = $resultado['email'];
+        if ($delete) {
+            echo "<h3>Usuário foi Excluído</h3>";
+        } else {
+            echo "<h3>O Usuário não foi Excluído</h3>";
+        }
         ?>
-        <h3>Usuário foi Excluído</h3>
+        
     </div>
 </body>
 </html>

@@ -33,7 +33,7 @@
             <input type="text" name="name" id="name" required value="<?=$name?>"><br><br>
             <label for="email">Email:</label><br>
             <!-- Corrigir input type para "email" -->
-            <input type="text" name="email" id="email" required value="<?=$email?>"><br><br>
+            <input type="email" name="email" id="email" required value="<?=$email?>"><br><br>
             <button type="submit">Salvar</button>
         </form>
         <br><br><br>

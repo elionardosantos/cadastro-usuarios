@@ -24,12 +24,16 @@
                     VALUES ('$name','$email')";
                     $inserir = mysqli_query($conexao, $sql);
 
-                    echo "<h3>Usuário cadastrado conforme dados abaixo:</h3>";
-                    echo "Nome: $name<br>";
-                    echo "Email: $email";
+                    if ($inserir) {
+                        echo "<h3>Usuário cadastrado</h3>";
+                    } else {
+                        echo mysqli_error();
+                    }
+
                 } else {
                     echo "<h3>Favor preencher os campos obrigatórios.</h3>";
                 }
+                mysqli_close($conexao);
             ?>
         </p>
     </div>

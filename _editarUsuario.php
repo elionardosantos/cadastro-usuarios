@@ -20,8 +20,13 @@
 
             $sql = "UPDATE `users` SET `userID`='$userID',`name`='$name',`email`='$email' WHERE `userID` = $userID";
             $atualizar = mysqli_query($conexao,$sql);
+            
+            if ($atualizar) {
+                echo "<h3>Usuário atualizado</h3>";
+            } else {
+                echo "<h3>O usuário não foi atualizado</h3>";
+            }
         ?>
-        <h3><?="Usuário atualizado";?></h3>
     </div>
 </body>
 </html>

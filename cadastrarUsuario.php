@@ -16,7 +16,7 @@
             <input type="text" name="name" id="name" required autofocus><br><br>
             <label for="email">Email:</label><br>
             <!-- Corrigir input type para "email" -->
-            <input type="text" name="email" id="email"><br><br>
+            <input type="email" name="email" id="email"><br><br>
             <input type="submit" value="Cadastrar">
         </form>
     </div>
