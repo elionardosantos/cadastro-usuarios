@@ -1,9 +1,9 @@
 <?php
 
-    $hostname = "localhost";
+    $hostname = "https://databases-auth.000webhost.com";
     $bancodedados = "cadastro";
-    $usuario = "root";
-    $senha = "";
+    $usuario = "id19174394_root";
+    $senha = "1py7Cg^QMknR[jHi";
 
     $conexao = new mysqli($hostname, $usuario, $senha, $bancodedados);
 
